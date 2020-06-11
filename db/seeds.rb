@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+ names = %W(lemon ice mint rhum orange jus)
+names.each do |name|
+ Ingredient.create!(name: name)
+end
