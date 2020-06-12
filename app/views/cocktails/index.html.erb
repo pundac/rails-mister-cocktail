@@ -1,4 +1,7 @@
+<%= cl_image_tag("cocktails.jpg",
+      width: 400, height: 300, crop: :fill) %>
 <div class="containes">
+
 <% @cocktails.each do |cocktail|%>
 
         <li><%=link_to cocktail.name, cocktail_path(cocktail) %> </li>
